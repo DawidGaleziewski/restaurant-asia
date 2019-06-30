@@ -18,30 +18,21 @@ body {
 
 .nav-top{
 	z-index: 2;
-	top: 0;
+	margin-top: $margin-medium * 4;
 	width: 100vw;
 	background-color: $color-main;
 
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 	padding: $padding-small $padding-medium;
 
 	@include screen-type(phone-medium){
 		flex-wrap: nowrap;
-		padding: $padding-small;
+		padding: 0;
 	}
-
-	@include screen-type(desktop){
-		max-width: $section-width-desktop;
-		margin:  0 auto;
-	}
-
-
 
 }
 
  .menu {
+	border-top: 3px dotted #e8e8e8;
 	display: flex;
 	border-left: 3px solid $color-accent;
 	border-bottom: 3px solid $color-accent;
@@ -65,10 +56,12 @@ body {
 		flex-wrap: wrap;
 	}
 
+
+
 	@include screen-type(phone-medium-landscape){
-		padding: $padding-small;
+		padding: $padding-medium;
 		flex-wrap: nowrap;
-		justify-content: flex-end;
+		justify-content: center;
 		margin-left: $margin-medium;
 		transform: translateX(0);
 		top:0 ;
@@ -79,9 +72,15 @@ body {
 		border-left: none;
 		border-bottom: none;
 	}
+
+	@include screen-type(desktop){
+		max-width: $section-width-desktop;
+		margin:  0 auto;
+	}
 	
 
 	&__item{
+		text-transform: uppercase;
 		position: relative;
 		max-width: 15rem;
 		opacity: 0;
@@ -93,7 +92,14 @@ body {
 		margin-bottom: $margin-medium;
 
 		@include screen-type(phone-medium-landscape){
+			margin-bottom: 0;
+			margin-right: $margin-small;
+			text-align: center;
 			opacity: 1;
+		}
+
+		@include screen-type(desktop){
+			
 		}
 
 		&:before{
@@ -121,7 +127,7 @@ body {
 			font-weight: bold;
 			display: block;
 			font-size: $size-description;
-			min-width: 8rem;
+			// min-width: 8rem;
 			padding: $padding-small;
 
 			@include screen-type(phone-medium){

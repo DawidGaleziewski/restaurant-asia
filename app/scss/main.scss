@@ -9,6 +9,7 @@
 
 /* 1. IMPORTS START - START*/
 @import './libraries/_normalize';
+// @import './fonts/gangof3';
 /* 1. IMPORTS START - END*/
 
 
@@ -29,6 +30,7 @@
 /* 3. SITE SECTIONS - START*/
 @import './elements/preloader';
 @import './layout/navbar';
+@import './layout/main_header';
 
 /* 3. SITE SECTIONS - END*/
 

@@ -1,1 +1,21 @@
+@font-face {
+    font-family: 'gang_of_threeregular';
+    src: url('./scss/fonts/go3v2-webfont.woff2') format('woff2'),
+         url('/scss/fonts/go3v2-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 // style for section headers
+.section-title {
+    text-align: center;
+    font-size: $size-title;
+    text-transform: uppercase;
+    font-family: 'gang_of_threeregular';
+    
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1rem;
+}
