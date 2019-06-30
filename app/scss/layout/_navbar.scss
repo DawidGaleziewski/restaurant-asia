@@ -2,8 +2,8 @@
 
 // Variables
 	// colors
-	$color-main: $color-primary;
-	$color-accent: $color-clickable-primary;
+	$color-main: #ffffff;
+	$color-accent: #22201d;
 
 
 // RELATED TO SCROLL
@@ -18,47 +18,45 @@ body {
 
 .nav-top{
 	z-index: 2;
-	position: fixed;
 	top: 0;
 	width: 100vw;
 	background-color: $color-main;
 
-	.wrapper{
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		padding: $padding-small $padding-medium;
-	
-		@include screen-type(phone-medium){
-			flex-wrap: nowrap;
-			padding: $padding-small;
-		}
-	
-		@include screen-type(desktop){
-			max-width: $section-width-desktop;
-			margin:  0 auto;
-		}
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: $padding-small $padding-medium;
+
+	@include screen-type(phone-medium){
+		flex-wrap: nowrap;
+		padding: $padding-small;
 	}
+
+	@include screen-type(desktop){
+		max-width: $section-width-desktop;
+		margin:  0 auto;
+	}
+
 
 
 }
 
  .menu {
 	display: flex;
-	border-left: 5px solid $color-accent;
-	border-bottom: 5px solid $color-accent;
+	border-left: 3px solid $color-accent;
+	border-bottom: 3px solid $color-accent;
 	overflow: hidden;
 	transform: translateX(90vw);
-	top: 3rem;
+	top: 2.5rem;
 	right: 0;
 	position: absolute;
 	flex-direction: column;
 	flex-wrap: nowrap;
 	padding: $padding-medium;
-	height: 80vh;
+	height: 93vh;
 	width: 80vw;
-	justify-content: space-around;
-	align-items: center;
+	justify-content: flex-start;
+	align-items: flex-start;
 	transition: transform 1s ease-in;
 	background-color: $color-main;
 
@@ -86,15 +84,13 @@ body {
 	&__item{
 		position: relative;
 		max-width: 15rem;
-		font-size: $size-description;
 		opacity: 0;
 		background-color: $color-main;
-		
-		text-align: center;
 		list-style: none;
 		display: block;
-		color:#fff;
+		color:$color-accent;
 		transition: transform 0.3s ease-in;
+		margin-bottom: $margin-medium;
 
 		@include screen-type(phone-medium-landscape){
 			opacity: 1;
@@ -124,7 +120,7 @@ body {
 			color: inherit;
 			font-weight: bold;
 			display: block;
-			font-size: $size-description * 1.5;
+			font-size: $size-description;
 			min-width: 8rem;
 			padding: $padding-small;
 
@@ -144,8 +140,7 @@ body {
 
 .menu-mobile__burger {
 	display: block;
-	// position: absolute;
-	// right: $margin-medium;
+	margin-left: 1rem;
 
 	&:hover {
 		cursor: pointer;
@@ -153,34 +148,29 @@ body {
 
 	.burger__line {
 		position: relative;
-		height: 5px;
-		width: 2rem;
+		height: 3px;
+		width: 1.5rem;
 		transition: transform 1s;
 		background-color: $color-accent;
 		margin-top: 5px;
-		border-radius: 3px;
-
-		&:first-of-type:after {
-			position: absolute;
-			top: -10px;
-			content: '';
-			height: 0.5rem;
-			width: 2rem;
-			background-color: $color-accent;
-			border-top-right-radius: 50px;
-			border-top-left-radius: 50px;
-		}
-		
 	}
 
 	&--toggled{
 		.burger__line:first-of-type {
+			transform: rotateZ(90deg);
+			transform-origin: top left;
+			transition: transform 1s;
+		}
+
+		.burger__line:nth-of-type(2) {
 			transform: rotateZ(30deg);
+			transform-origin: top left;
 			transition: transform 1s;
 		}
 
 		.burger__line:nth-of-type(3){
-			transform: rotateZ(-30deg);
+			transform: rotateZ(-90deg);
+			transform-origin: bottom left;
 			transition: transform 1s;
 		}
 	}
@@ -204,8 +194,7 @@ body {
 		}
 	
 		100% {
-			width: 40%;
-			
+			width: 40%;	
 		}	
 	} 
 
