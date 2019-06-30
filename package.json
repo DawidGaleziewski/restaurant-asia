@@ -41,7 +41,7 @@
   },
   "dependencies": {
     "g": "^2.0.1",
-    "gifsicle": "^1.0.3",
+    "gifsicle": "^4.0.1",
     "gulp-cli": "^2.2.0"
   }
 }

@@ -3,6 +3,7 @@
 
 # initialize the project
 npm init
+npm install gifsicle@1.0.3
 npm install gulp --save-dev
 npm install gulp-sass --save-dev
 

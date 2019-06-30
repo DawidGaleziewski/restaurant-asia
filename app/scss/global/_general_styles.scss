@@ -1,0 +1,30 @@
+@import './variables';
+
+/* GENERAL STYLES START */
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+html {
+	overflow-X: hidden;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: $color-main-background;
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, p, ul, li, ol {
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	color: inherit;
+	text-decoration: none;
+}
+/* GENERAL STYLES END */

@@ -1,0 +1,38 @@
+/* TABLE OF CONTENTS */
+	/* 1. IMPORTS START */
+	/* 2. GLOBALLY USED ITEMS */
+	/* 3. SITE SECTIONS */
+
+
+	
+
+
+/* 1. IMPORTS START - START*/
+@import './libraries/_normalize';
+/* 1. IMPORTS START - END*/
+
+
+
+
+
+/* 2. GLOBALLY USED ITEMS - START*/
+@import './global/general_styles';
+@import 'global/variables';
+@import './global/breakpoints';
+@import './elements/section_headers';
+/* 2. GLOBALLY USED ITEMS - END*/
+
+
+
+
+
+/* 3. SITE SECTIONS - START*/
+@import './elements/preloader';
+@import './layout/navbar';
+
+/* 3. SITE SECTIONS - END*/
+
+
+
+
+
