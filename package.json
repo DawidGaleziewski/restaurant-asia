@@ -1,5 +1,5 @@
 {
-  "name": "restaurant",
+  "name": "sandbox",
   "version": "1.0.0",
   "description": "sandbox app",
   "main": "gulpfile.js",
@@ -41,7 +41,7 @@
   },
   "dependencies": {
     "g": "^2.0.1",
-    "gifsicle": "^4.0.1",
+    "gifsicle": "^1.0.3",
     "gulp-cli": "^2.2.0"
   }
 }

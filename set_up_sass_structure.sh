@@ -6,7 +6,10 @@ npm init
 npm install gulp --save-dev
 npm install gulp-sass --save-dev
 
+
 #install rest of dependencies
+npm install
+chmod 777 * -R
 npm install
 
 #start git firs commit
