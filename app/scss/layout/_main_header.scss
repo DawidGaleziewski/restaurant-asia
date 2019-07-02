@@ -18,11 +18,26 @@
 
     .nav-secondary {
         .menu {
-            margin: $padding-medium 0;
-            display: flex;
-            justify-content: space-between;
+            margin-top: 4rem;
             list-style: none;
+            display: flex;
+            flex-direction: column;
+
+            @include screen-type(desktop){
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
             &__item{
+                margin: 0 auto;
+                margin-bottom: 2rem;
+
+                @include screen-type(desktop){
+                    margin: 0;
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+
                 position: relative;
                 height: 18.75rem;
                 width: 18.75rem;
