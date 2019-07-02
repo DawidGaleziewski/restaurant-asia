@@ -7,15 +7,17 @@
 }
 
 // style for section headers
-.section-title {
-    text-align: center;
-    font-size: $size-title;
-    text-transform: uppercase;
-    font-family: 'gang_of_threeregular';
+.section-header{
+    &__title {
+        text-align: center;
+        font-size: $size-title;
+        text-transform: uppercase;
+        font-family: 'gang_of_threeregular';
+        
+    }
     
-}
-
-.section-subtitle {
-    text-align: center;
-    font-size: 1rem;
+    &__subtitle {
+        text-align: center;
+        font-size: 1rem;
+    }
 }
