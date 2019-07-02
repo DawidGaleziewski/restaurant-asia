@@ -6,11 +6,11 @@ class Menu{
         // If device is mobile run rest of the code
         if(isMobile) {
             const btnBurger = document.getElementById('nav-top-burger');
-            const menuButtons = document.querySelectorAll('.menu__item');
+            const menuButtons = document.querySelectorAll('.nav-top .menu .menu__item');
 
             const toggleMobileNav = ()=> {
                 const menu = document.getElementById('nav-menu');
-                const menuItems = document.querySelectorAll('.menu .menu__item');
+                const menuItems = document.querySelectorAll('.nav-top .menu .menu__item');
                 menu.classList.toggle('toggle-mobile-nav');
                 btnBurger.classList.toggle('menu-mobile__burger--toggled');
 
