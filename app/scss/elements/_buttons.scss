@@ -1,1 +1,15 @@
 // Mixing for creating buttons
+@mixin button-primary {
+    font-family: inherit;
+    border: none;
+    color: #fffefe;
+    background-color: #ee322a;
+    padding: 0.7rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.8rem;
+
+    &:hover {
+        cursor: pointer;
+    }
+}

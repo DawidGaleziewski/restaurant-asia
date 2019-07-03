@@ -1,0 +1,23 @@
+.item{
+    background-color: #22211f;
+    width: 15rem;
+    &__img{
+        width: 100%;
+
+        object-fit: cover;
+    }
+
+    
+    .description {
+        
+        padding: 2rem;
+        &__title{
+            color: #fff;
+            margin: 0;
+        }
+    }
+
+    .button-primary {
+        @include button-primary;
+    }
+}
