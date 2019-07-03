@@ -1,0 +1,14 @@
+
+.dishes-popular {
+    margin: $margin-medium * 4 auto;
+    .section-header{
+        &__title {
+            color: #22201d
+        }
+        
+        &__subtitle {
+            color: #22201d;
+        }
+    }
+    
+}

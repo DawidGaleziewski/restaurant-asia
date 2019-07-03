@@ -14,6 +14,21 @@ class Carousel {
         const setSlidePosition = (slide, index) => {
             slide.style.left = slideWidth * index + 'px';
         };
+
+        // change css origin in order to somthen the animation
+        const changeTransformOrigin = (currentSlide, targetSlide, direction) =>{
+            const currentSlideImage = currentSlide.children[0];
+            const targetSlideImage = targetSlide.children[0];
+            if(direction === 'right'){
+                currentSlideImage.style.transformOrigin = "right";
+                targetSlideImage.style.transformOrigin = "left";
+            } else if(direction === 'left'){
+                currentSlideImage.style.transformOrigin = "left";
+                targetSlideImage.style.transformOrigin = "right";
+            }
+
+        }
+
         slides.forEach(setSlidePosition);
 
         // Moving pictures by clicking buttons
@@ -45,7 +60,7 @@ class Carousel {
             const currentSlide = track.querySelector('.current-slide');
             const nextSlide = currentSlide.nextElementSibling;
             const nextIndex = slides.findIndex(slide => slide === nextSlide);
-
+            changeTransformOrigin(currentSlide, nextSlide, 'right')
             moveToSlide(track, currentSlide, nextSlide);
             hideShowArrows(slides, prevButton, nextButton, nextIndex);
         })
@@ -56,8 +71,10 @@ class Carousel {
             const prevSlide = currentSlide.previousElementSibling;
             const prevIndex = slides.findIndex(slide => slide === prevSlide);
 
+            changeTransformOrigin(currentSlide, prevSlide, 'left')
             moveToSlide(track, currentSlide, prevSlide);
             hideShowArrows(slides, prevButton, nextButton, prevIndex);
+            
         })
 
     }
