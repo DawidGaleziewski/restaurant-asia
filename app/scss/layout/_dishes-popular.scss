@@ -1,14 +1,21 @@
 
 .dishes-popular {
-    margin: $margin-medium * 4 auto;
+    margin: $margin-medium * 2 auto;
     .section-header{
+        margin-bottom: $margin-medium * 2;
         &__title {
-            color: #22201d
+            color: #22201d;
+            
         }
         
         &__subtitle {
             color: #22201d;
         }
+    }
+
+    .menu {
+        display: flex;
+        justify-content: center;
     }
     
 }

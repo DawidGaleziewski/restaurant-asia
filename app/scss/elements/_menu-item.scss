@@ -1,23 +1,40 @@
 .item{
+    list-style: none;
+    margin: 2rem;
     background-color: #22211f;
-    width: 15rem;
+    border: 0.5px solid #e8e8e8;
+    width: 17rem;
     &__img{
         width: 100%;
-
         object-fit: cover;
+        border: 0.5px solid #e8e8e8;
+        border-bottom: none;
     }
 
     
     .description {
-        
+        position: relative;
+        text-align: center;
         padding: 2rem;
+        padding-bottom: 4rem;
+
         &__title{
+            font-size: 1.3rem;
             color: #fff;
             margin: 0;
+            margin-bottom: 2rem;
+        }
+
+        &__text {
+            color: #5e5e5e;
         }
     }
 
     .button-primary {
         @include button-primary;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateY(50%) translateX(-50%);
     }
 }
