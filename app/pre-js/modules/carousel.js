@@ -1,19 +1,34 @@
 class Carousel {
-    start(){
+    start(carouselContainerId){
         // Variables
-        const track = document.querySelector('.carousel__track');
-        const slides = Array.from(track.children);
-        const nextButton = document.querySelector('.carousel__button--right');
-        const prevButton = document.querySelector('.carousel__button--left');
+        let carouselContainer = document.getElementById(carouselContainerId);
+        const nextButton = carouselContainer.querySelector('.carousel__button--right');
+        const prevButton = carouselContainer.querySelector('.carousel__button--left');
+
+
+        let track = carouselContainer.querySelector('.carousel__track');
+        let slides = Array.from(track.children);
 
         // Helpers - Dynamic width of slide
-        const slideSize = slides[0].getBoundingClientRect();
-        const slideWidth = slideSize.width;
+        let slideSize = slides[0].getBoundingClientRect();
+        let slideWidth = slideSize.width;
 
         // Arrange slides next to each other
         const setSlidePosition = (slide, index) => {
             slide.style.left = slideWidth * index + 'px';
         };
+
+        slides.forEach(setSlidePosition);
+
+        // Refresh information in case wbesite size changes
+        const refreshSizeInformation = ()=> {
+            carouselContainer = document.getElementById(carouselContainerId);
+            track = carouselContainer.querySelector('.carousel__track');
+            slides = Array.from(track.children);
+            slideSize = slides[0].getBoundingClientRect();
+            slideWidth = slideSize.width;
+            slides.forEach(setSlidePosition);
+        }
 
         // change css origin in order to somthen the animation
         const changeTransformOrigin = (currentSlide, targetSlide, direction) =>{
@@ -29,10 +44,11 @@ class Carousel {
 
         }
 
-        slides.forEach(setSlidePosition);
-
         // Moving pictures by clicking buttons
         const moveToSlide = (track, currentSlide, targetSlide) => {
+            // Refreash size information in case user resizes window
+            refreshSizeInformation();
+
             // Move to next slide
             track.style.transform = `translateX(-${targetSlide.style.left})`;
 
