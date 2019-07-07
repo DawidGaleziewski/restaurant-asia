@@ -1,5 +1,5 @@
 class Carousel {
-    start(carouselContainerId){
+    start(carouselContainerId, itemsOnPage){
         // Variables
         let carouselContainer = document.getElementById(carouselContainerId);
         const nextButton = carouselContainer.querySelector('.carousel__button--right');
@@ -15,7 +15,7 @@ class Carousel {
 
         // Arrange slides next to each other
         const setSlidePosition = (slide, index) => {
-            slide.style.left = slideWidth * index + 'px';
+            slide.style.left = (slideWidth * index)/itemsOnPage + 'px';
         };
 
         slides.forEach(setSlidePosition);

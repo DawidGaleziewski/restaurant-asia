@@ -1,5 +1,6 @@
 
 .dishes-popular {
+    max-width: 80rem;
     margin: $margin-medium * 2 auto;
     .section-header{
         margin-bottom: $margin-medium * 2;
@@ -13,9 +14,22 @@
         }
     }
 
-    .menu {
-        display: flex;
-        justify-content: center;
+    .carousel__track {
+        position: relative;
+        height: 29rem;
+        width: 60rem;
     }
+
+    .carousel__slide {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    // .item {
+    //     margin-bottom: 1rem;
+    //     margin-right: 1rem;
+    // }
     
 }

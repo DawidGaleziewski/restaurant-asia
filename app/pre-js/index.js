@@ -16,6 +16,7 @@
     
     //3. start module
     menu.start();
-    carousel.start('carousel-header-img');
+    carousel.start('carousel-header-img', 1);
+    carousel.start('carousel-dishes-items', 3);
 
     
