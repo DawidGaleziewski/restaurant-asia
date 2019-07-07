@@ -14,6 +14,10 @@
         }
     }
 
+    .carousel__track-container{
+        overflow-y: visible;
+    }
+
     .carousel__track {
         position: relative;
         height: 29rem;
