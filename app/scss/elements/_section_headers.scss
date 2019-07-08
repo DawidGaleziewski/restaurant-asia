@@ -13,17 +13,30 @@
         font-size: $size-title;
         text-transform: uppercase;
         font-family: 'gang_of_threeregular';
-        color: #fff;     
+        color: #fff;  
+        text-shadow: 0px 0px 3px rgba(0,0,0,0.88);   
     }
     
     &__subtitle {
         text-align: center;
         font-size: 1rem;
         color: #fff;
+        text-shadow: 0px 0px 3px rgba(0,0,0,0.88);
         
     }
 }
 
-.section-header--shadow {
-    text-shadow: 0px 0px 3px rgba(0,0,0,0.88);
+.section-header--secondary {
+
+    margin-bottom: $margin-medium * 2;
+    
+    &__title {
+        text-shadow: none;
+        color: #22201d;
+    }
+
+    &__subtitle {
+        text-shadow: none;
+        color: #22201d;
+    }
 }
