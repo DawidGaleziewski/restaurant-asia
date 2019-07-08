@@ -21,5 +21,6 @@
     carousel.start('carousel-header-img', 1);
     carousel.start('carousel-dishes-items', 3);
     playVideo.start();
+    carousel.start('carousel-about-img');
 
     

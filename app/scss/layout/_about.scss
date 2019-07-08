@@ -1,0 +1,19 @@
+.about {
+    max-width: 80rem;
+    margin: $margin-medium * 2 auto;
+    .section-header{
+        margin-bottom: $margin-medium * 2;
+        &__title {
+            color: #22201d;
+            
+        }
+        
+        &__subtitle {
+            color: #22201d;
+        }
+    }
+
+    .carousel {
+        height: 37.5rem;
+    }
+}
