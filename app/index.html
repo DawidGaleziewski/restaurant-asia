@@ -88,10 +88,64 @@
 				<h3 class="section-header__subtitle">satisfy the soul, not just the plate</h2>
 			</header>
 			<button class="carousel__button carousel__button--left is-hidden">
-				<img class="button__image" src="./img-min/gui/leftchevron.png" alt="Left">
+				<img class="button__image" s            &:before{
+                
+                border-radius: 3px;
+                position: absolute;
+                content: '';
+                background-color: $color-accent;
+                background: linear-gradient(to left, $color-accent, darken($color-accent, 30%));
+                border: none;
+                bottom: -4px;
+                left: 30%;
+                height: 5px;
+                width: 0%;
+            }
+    
+            &:hover::before,
+            &:active::before{
+                animation: button-load-bottom 0.5s forwards 0s;
+            }
+    min/gui/leftchevron.png" alt="Left">
 			</button>
-			<div class="carousel__track-container">
-				<ul class="carousel__track">
+			<div class="carousel__track-cont            &:before{
+                
+                border-radius: 3px;
+                position: absolute;
+                content: '';
+                background-color: $color-accent;
+                background: linear-gradient(to left, $color-accent, darken($color-accent, 30%));
+                border: none;
+                bottom: -4px;
+                left: 30%;
+                height: 5px;
+                width: 0%;
+            }
+    
+            &:hover::before,
+            &:active::before{
+                animation: button-load-bottom 0.5s forwards 0s;
+            }
+    
+				<ul class="carousel__track">            &:before{
+                
+                border-radius: 3px;
+                position: absolute;
+                content: '';
+                background-color: $color-accent;
+                background: linear-gradient(to left, $color-accent, darken($color-accent, 30%));
+                border: none;
+                bottom: -4px;
+                left: 30%;
+                height: 5px;
+                width: 0%;
+            }
+    
+            &:hover::before,
+            &:active::before{
+                animation: button-load-bottom 0.5s forwards 0s;
+            }
+    
 					<li class="carousel__slide current-slide">
 						<img class="carousel__image" src="./img-min/main-header/sushi-1.jpeg" alt="slide image 1">
 					</li>
@@ -373,14 +427,30 @@
 			<h3 class="section-header__subtitle section-header--secondary__subtitle">the taste of asia</h2>
 		</header>
 		<ul class="menu-nav">
-			<li class="menu-nav__item">All dishes</li>
-			<li class="menu-nav__item">Seafood</li>
-			<li class="menu-nav__item">Meat</li>
-			<li class="menu-nav__item">Sushi & Rolls</li>
-			<li class="menu-nav__item">Rice</li>
-			<li class="menu-nav__item">Noodles</li>
-			<li class="menu-nav__item">Salads</li>
-			<li class="menu-nav__item">Desserts</li>
+			<li class="menu-nav__item">
+				<span href="" class="link">All dishes</span>
+			</li>
+			<li class="menu-nav__item">
+				<span href="" class="link">Seafood</span>
+			</li>
+			<li class="menu-nav__item">
+				<span href="" class="link">Meat</span>
+			</li>
+			<li class="menu-nav__item">
+				<span href="" class="link">Sushi & Rolls</span>
+			</li>
+			<li class="menu-nav__item">
+				<span href="" class="link">Rice</span>
+			</li>
+			<li class="menu-nav__item">
+				<span href="" class="link">Noodles</span>
+			</li>
+			<li class="menu-nav__item">
+				<span href="" class="link">Salads</span> 
+			</li>
+			<li class="menu-nav__item">
+				<span href="" class="link">Desserts</span>
+			</li>
 		</ul>
 	</section>
 	<!-- 6. DISHES-MENU END-->

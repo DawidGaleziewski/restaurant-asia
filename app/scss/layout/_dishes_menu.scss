@@ -8,52 +8,26 @@
         justify-content: space-around;   
     
     // Finished here
-        @include screen-type(desktop){
-            max-width: $section-width-desktop;
-            margin:  0 auto;
-        }
+        // @include screen-type(desktop){
+
+        // }
         
     
         &__item{
             text-transform: uppercase;
-            position: relative;
-            max-width: 15rem;
-            background-color: $color-main;
             list-style: none;
             display: block;
             color:$color-accent;
             margin-bottom: $margin-medium;
     
-            @include screen-type(phone-medium-landscape){
-                margin-bottom: 0;
-                margin-right: $margin-small;
-                text-align: center;
-            }
     
-            @include screen-type(desktop){
+            // @include screen-type(desktop){
                 
-            }
+            // }
     
-            &:before{
-                
-                border-radius: 3px;
-                position: absolute;
-                content: '';
-                background-color: $color-accent;
-                background: linear-gradient(to left, $color-accent, darken($color-accent, 30%));
-                border: none;
-                bottom: -4px;
-                left: 30%;
-                height: 5px;
-                width: 0%;
-            }
-    
-            &:hover::before,
-            &:active::before{
-                animation: button-load-bottom 0.5s forwards 0s;
-            }
-    
+
             .link {
+                cursor: pointer;
                 text-decoration: none;
                 color: inherit;
                 font-weight: bold;
