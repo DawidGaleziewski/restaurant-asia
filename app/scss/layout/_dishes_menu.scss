@@ -49,45 +49,13 @@
     
     }
     
-    .menu-mobile__burger {
-        display: block;
-        margin-left: 1rem;
-    
-        &:hover {
-            cursor: pointer;
-        }
-    
-        .burger__line {
-            position: relative;
-            height: 3px;
-            width: 1.5rem;
-            transition: transform 1s;
-            background-color: $color-accent;
-            margin-top: 5px;
-        }
-    
-        &--toggled{
-            .burger__line:first-of-type {
-                transform: rotateZ(90deg);
-                transform-origin: top left;
-                transition: transform 1s;
-            }
-    
-            .burger__line:nth-of-type(2) {
-                transform: rotateZ(30deg);
-                transform-origin: top left;
-                transition: transform 1s;
-            }
-    
-            .burger__line:nth-of-type(3){
-                transform: rotateZ(-90deg);
-                transform-origin: bottom left;
-                transition: transform 1s;
-            }
-        }
-    
-        @include screen-type(phone-medium-landscape){
-            display: none;
+    .menu-items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+
+        .item {
+            margin-bottom: 6rem;
         }
     }
         
