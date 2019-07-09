@@ -1,0 +1,120 @@
+.dishes-menu {
+    max-width: 80rem;
+    margin: 0  auto;
+
+    .menu-nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;   
+    
+    // Finished here
+        @include screen-type(desktop){
+            max-width: $section-width-desktop;
+            margin:  0 auto;
+        }
+        
+    
+        &__item{
+            text-transform: uppercase;
+            position: relative;
+            max-width: 15rem;
+            background-color: $color-main;
+            list-style: none;
+            display: block;
+            color:$color-accent;
+            margin-bottom: $margin-medium;
+    
+            @include screen-type(phone-medium-landscape){
+                margin-bottom: 0;
+                margin-right: $margin-small;
+                text-align: center;
+            }
+    
+            @include screen-type(desktop){
+                
+            }
+    
+            &:before{
+                
+                border-radius: 3px;
+                position: absolute;
+                content: '';
+                background-color: $color-accent;
+                background: linear-gradient(to left, $color-accent, darken($color-accent, 30%));
+                border: none;
+                bottom: -4px;
+                left: 30%;
+                height: 5px;
+                width: 0%;
+            }
+    
+            &:hover::before,
+            &:active::before{
+                animation: button-load-bottom 0.5s forwards 0s;
+            }
+    
+            .link {
+                text-decoration: none;
+                color: inherit;
+                font-weight: bold;
+                display: block;
+                font-size: $size-description;
+                padding: $padding-small;
+    
+                @include screen-type(phone-medium){
+                    opacity: 1;
+                }
+    
+                @include screen-type(phone-medium-landscape){
+                    padding: $padding-small;
+                    font-size: $size-description * 0.7;
+                }
+            }
+            
+        }
+    
+    }
+    
+    .menu-mobile__burger {
+        display: block;
+        margin-left: 1rem;
+    
+        &:hover {
+            cursor: pointer;
+        }
+    
+        .burger__line {
+            position: relative;
+            height: 3px;
+            width: 1.5rem;
+            transition: transform 1s;
+            background-color: $color-accent;
+            margin-top: 5px;
+        }
+    
+        &--toggled{
+            .burger__line:first-of-type {
+                transform: rotateZ(90deg);
+                transform-origin: top left;
+                transition: transform 1s;
+            }
+    
+            .burger__line:nth-of-type(2) {
+                transform: rotateZ(30deg);
+                transform-origin: top left;
+                transition: transform 1s;
+            }
+    
+            .burger__line:nth-of-type(3){
+                transform: rotateZ(-90deg);
+                transform-origin: bottom left;
+                transition: transform 1s;
+            }
+        }
+    
+        @include screen-type(phone-medium-landscape){
+            display: none;
+        }
+    }
+        
+}
