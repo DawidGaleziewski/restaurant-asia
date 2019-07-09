@@ -3,11 +3,13 @@
     margin: 0  auto;
 
     .menu-nav {
+        // margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;   
+        justify-content: center;   
+
     
-    // Finished here
+
         // @include screen-type(desktop){
 
         // }
@@ -19,11 +21,15 @@
             display: block;
             color:$color-accent;
             margin-bottom: $margin-medium;
+
+            border-right: 1px solid black;
+            
+
     
-    
-            // @include screen-type(desktop){
-                
-            // }
+            @include screen-type(desktop){
+                border-right: none;
+                margin: $margin-medium;
+            }
     
 
             .link {
@@ -32,7 +38,7 @@
                 color: inherit;
                 font-weight: bold;
                 display: block;
-                font-size: $size-description;
+                font-size: 1rem;
                 padding: $padding-small;
     
                 @include screen-type(phone-medium){
