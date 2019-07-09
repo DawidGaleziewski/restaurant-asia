@@ -23,4 +23,13 @@
     playVideo.start();
     carousel.start('carousel-about-img');
 
+    // Important, those files will be only fetched when this code is runnin on a server
+    fetch("./orders_json/order_items.json")
+        .then(function(resp){
+            return resp.json()
+        })
+        .then(function(data){
+            console.log(data)
+        })
+
     
