@@ -1,15 +1,15 @@
 {
     "orderItems":[
         {
-            "item_id": 1,
+            "item_id": "ORD001",
             "order_name": "Dragon Roll: Shrimp Tempura with Eel",
             "order_description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, quas",
             "image_name": "sushi-1.jpeg",
-            "tags": ["seafood", "rice", "sushi-rolls"]
+            "tags": ["popular", "seafood", "rice", "sushi-rolls"]
         },
 
         {
-            "item_id": 2,
+            "item_id": "ORD002",
             "order_name": "Sushi misu",
             "order_description": "Dolor sit amet consectetur adipisicing elit",
             "image_name": "sushi-2.jpeg",
@@ -18,3 +18,4 @@
 
     ]
 }
+

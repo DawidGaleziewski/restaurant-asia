@@ -3,16 +3,15 @@
     margin: 0  auto;
 
     .menu-nav {
-        // margin: 0 auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;   
 
     
 
-        // @include screen-type(desktop){
-
-        // }
+        @include screen-type(desktop){
+            flex-wrap: nowrap;
+        }
         
     
         &__item{
