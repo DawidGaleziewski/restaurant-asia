@@ -1,3 +1,4 @@
+
 class FetchJson{
     start(){
 
@@ -14,7 +15,7 @@ class FetchJson{
                 let finalDOMStructure = "";
 
                 jsonObj.forEach(orderItem => {
-                    // console.log(orderItem)
+
                     const orderItemDOMMarkup = `<li class="item" id="${orderItem.item_id}">
                     <img class="item__img" src="${imgPath}${orderItem.image_name}" alt="Dish picture">
                         <div class="description">
@@ -26,7 +27,7 @@ class FetchJson{
                                 order online
                             </button>
                         </div>
-                    </li>` 
+                    </li>`
 
                     finalDOMStructure += orderItemDOMMarkup;
                 })
@@ -40,9 +41,6 @@ class FetchJson{
 
 export default FetchJson;
 
-
-// const orderItemDOM = createElement("li");
-// const orderItemDOMImage = createElement("img");
 
 
 

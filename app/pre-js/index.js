@@ -4,6 +4,7 @@
     import Carousel from './modules/carousel';
     import PlayVideo from './modules/play_video';
     import FetchJson from './modules/fetch_orders/fetch_json';
+    import FilterOrders from './modules/fetch_orders/filter_orders';
 
 
 
@@ -14,6 +15,7 @@
     const carousel = new Carousel;
     const playVideo = new PlayVideo;
     const fetchJson = new FetchJson;
+    const filterOrders = new FilterOrders;
 
 
   
@@ -25,6 +27,7 @@
     playVideo.start();
     carousel.start('carousel-about-img');
     fetchJson.start();
+    window.onload=  filterOrders.start
 
 
     

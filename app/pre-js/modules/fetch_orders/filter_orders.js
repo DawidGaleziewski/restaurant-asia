@@ -1,4 +1,4 @@
-{
+const testJson = {
     "orderItems":[
         {
             "item_id": "ORD001",
@@ -61,7 +61,7 @@
             "order_name": "Salad style salad",
             "order_description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, quas dolor sit amet consectetur adipisicing elit. Officiis.",
             "image_name": "salad-2.jpeg",
-            "tags": ["salad", "popular"]
+            "tags": ["rice", "popular"]
         },
 
         {
@@ -75,3 +75,44 @@
     ]
 }
 
+
+
+class FilterOrders{
+    start(){
+
+        console.clear()
+        // console.log(testJson.orderItems)
+        // console.log(testJson.orderItems[0].tags.includes("popular"))
+        
+        // 1. Take search tag criteria
+        const searchCriteria = "desserts"
+
+        // 2. Iterate thru all objects and filter only those that have this in tag
+        let filteredOrders = testJson.orderItems.filter((order)=> {
+            return order.tags.includes(searchCriteria)
+        })
+
+        // 3. Return ids of orders that should be left on page
+        filteredOrders = filteredOrders.map(order=> {
+            return order.item_id
+        })
+
+        // 4. Iterate thru dom objects and assign display: none to orders that id does not match those
+        
+        const orderItemsDOM = document.querySelectorAll('.menu-items .item')
+        
+        console.log(orderItemsDOM)
+        orderItemsDOM.forEach((orderItem)=>{
+            if(!filteredOrders.includes(orderItem.id)){
+                orderItem.style.display = "none"
+            }
+        })
+
+        // console.log(filteredOrders)
+        
+
+
+    }
+}
+
+export default FilterOrders;
