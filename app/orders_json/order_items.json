@@ -11,7 +11,7 @@
         {
             "item_id": "ORD002",
             "order_name": "Sushi special",
-            "order_description": "Dolor sit amet consectetur adipisicing elit",
+            "order_description": "Dolor sit amet consectetur adipisicing elit Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, quas dolor sit amet consectetur adipisicing elit. Officiis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, quas dolor sit amet consectetur adipisicing elit. Officiis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, quas dolor sit amet consectetur adipisicing elit. Officiis.",
             "image_name": "sushi-3.jpeg",
             "tags": ["all-dishes","seafood", "sushi-rolls"]
         },

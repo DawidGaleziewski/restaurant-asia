@@ -2,21 +2,20 @@
 .dishes-popular {
     max-width: 80rem;
     margin: $margin-medium * 2 auto;
-
-    // carousel
+ 
 
     .carousel {
         border: none;
         max-width: 70rem;
     }
 
-    .carousel__track-container{
-        overflow-y: visible;
-    }
+    // .carousel__track-container{
+    //     overflow-y: visible;
+    // }
 
     .carousel__track {
         position: relative;
-        height: 29rem;
+        height: 32rem;
         width: 60rem;
     }
 
