@@ -1,4 +1,8 @@
 .item{
+    opacity: 1;
+    order: 1;
+    transition: opacity 1s ease-in;
+
     position: relative;
     list-style: none;
     // margin: 2rem;
@@ -37,5 +41,18 @@
         left: 50%;
         bottom: 0;
         transform: translateY(50%) translateX(-50%);
+    }
+}
+
+
+// js classes
+.item--hidden {
+    transition: opacity 1s ease-out;
+    opacity: 0;
+    order: 2;
+
+
+    .button-primary {
+        display: none;
     }
 }

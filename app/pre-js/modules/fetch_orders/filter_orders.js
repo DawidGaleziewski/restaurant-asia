@@ -27,9 +27,9 @@ class FilterOrders{
             // console.log(orderItemsDOM)
             orderItemsDOM.forEach((orderItem)=>{
                 if(!filteredOrders.includes(orderItem.id)){
-                    orderItem.style.display = "none"
+                    orderItem.classList.add('item--hidden');
                 } else {
-                    orderItem.style.display = "block"
+                    orderItem.classList.remove('item--hidden');
                 }
             })
         })  
