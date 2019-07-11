@@ -27,7 +27,7 @@
     playVideo.start();
     carousel.start('carousel-about-img');
     fetchJson.start();
-    window.onload=  filterOrders.start
+    filterOrders.start()
 
 
     
