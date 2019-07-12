@@ -2,12 +2,16 @@
     max-width: 80rem;
     margin: 0  auto;
     border: 0.5px solid #e8e8e8;
-   background-image: url('../../img-min/testimonial/testimonial.jpeg');
-   background-position: center;
-   background-repeat: no-repeat;
-   background-size: cover;
-   min-height: 37.5rem;
-   padding: 6rem;
+    background-image: url('../../img-min/testimonial/testimonial.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 37.5rem;
+    padding: 6rem;
+
+   .section-header {
+       margin-bottom: 4rem
+   }
 
    .carousel {
         border: none;
@@ -16,6 +20,24 @@
    .carousel__track {
         position: relative;
         height: 32rem;
-        width: 60rem;
+        max-width: 60rem;
     }
+
+    .single-testimonial{
+        &__description {
+            padding: 3rem 6rem;
+            background-color: #ffffff;
+        }
+
+        &__author{
+            display: block;
+            color: white;
+            text-align: center;
+            width: 100%;
+            margin-top: 2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+    
 }
