@@ -8,4 +8,14 @@
    background-size: cover;
    min-height: 37.5rem;
    padding: 6rem;
+
+   .carousel {
+        border: none;
+   }
+
+   .carousel__track {
+        position: relative;
+        height: 32rem;
+        width: 60rem;
+    }
 }

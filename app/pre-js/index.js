@@ -27,7 +27,8 @@
     playVideo.start();
     carousel.start('carousel-about-img');
     fetchJson.start();
-    filterOrders.start()
+    filterOrders.start();
+    carousel.start('carousel-testimonial', 1);
 
 
     
