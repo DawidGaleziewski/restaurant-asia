@@ -1,3 +1,4 @@
+
 .testimonial {
     max-width: 80rem;
     margin: 0  auto;
@@ -7,25 +8,37 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 37.5rem;
-    padding: 6rem;
 
    .section-header {
+       margin-top: 4rem;
        margin-bottom: 4rem
    }
 
    .carousel {
         border: none;
+        width: 40rem;
+
+        &__button{
+            top: 24%;
+        }
    }
 
    .carousel__track {
         position: relative;
         height: 32rem;
-        max-width: 60rem;
+        max-width: 30rem;
+    }
+
+    .carousel__slide {
+        width: 60rem;
     }
 
     .single-testimonial{
+        width: 40rem;
         &__description {
             padding: 3rem 6rem;
+            min-height: 15rem;
+
             background-color: #ffffff;
         }
 
