@@ -1,4 +1,4 @@
-
+// @include screen-type(desktop)
 .testimonial {
     max-width: 80rem;
     margin: 0  auto;
@@ -7,7 +7,6 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 37.5rem;
 
    .section-header {
        margin-top: 4rem;
@@ -19,38 +18,42 @@
         width: 40rem;
 
         &__button{
-            top: 24%;
-        }
-   }
-
-   .carousel__track {
-        position: relative;
-        height: 32rem;
-        max-width: 30rem;
-    }
-
-    .carousel__slide {
-        width: 60rem;
-    }
-
-    .single-testimonial{
-        width: 40rem;
-        &__description {
-            padding: 3rem 6rem;
-            min-height: 15rem;
-
-            background-color: #ffffff;
+            top: 29%;
         }
 
-        &__author{
-            display: block;
-            color: white;
-            text-align: center;
-            width: 100%;
-            margin-top: 2rem;
-            font-weight: bold;
-            text-transform: uppercase;
+        &__track-container {
+            height: auto;
         }
-    }
-    
+        
+        &__track {
+            position: relative;
+            min-height: 25rem;
+            max-width: 30rem;
+
+            .carousel__slide {
+                width: 60rem;
+
+                .single-testimonial{
+                    width: 40rem;
+                    &__description {
+                        padding: 3rem 6rem;
+                        min-height: 15rem;
+                        font-size: 1.2rem;
+                        background-color: #ffffff;
+                    }
+            
+                    &__author{
+                        font-size: 1rem;
+                        display: block;
+                        color: white;
+                        text-align: center;
+                        width: 100%;
+                        margin-top: 2rem;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+   }     
 }
