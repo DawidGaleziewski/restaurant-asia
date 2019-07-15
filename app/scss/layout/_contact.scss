@@ -1,0 +1,78 @@
+.contact {
+    max-width: 80rem;
+    margin: 0  auto;
+
+    .section-header{
+        margin-top: 4rem;
+    }
+    .contact-details{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        min-height: 37.5rem;
+        justify-content: space-between;
+
+        .map {
+            width: 48%;
+            height: 37.5rem;
+            background-color: #e5e3df;
+        }
+
+        .contact-form {
+            width: 48%;
+            height: 37.5rem;
+            padding: 6rem 4rem;
+            background-image: url('../../img-min/contact/clams.jpeg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-content: flex-start;
+
+            &__name,
+            &__email {
+                width: 47%;
+            }
+
+            &__message {
+                margin-top: 2rem;
+                width: 100%;
+
+                textarea {
+                    height: 7rem;
+                }
+            }
+
+            &__btn{
+                margin: 0 auto;
+                margin-top: 2rem; 
+                .button {
+                    @include button-primary;
+                    padding: 1rem;
+                    display: inline-block;
+                }
+            }
+
+            &__name input,
+            &__email input,
+            &__message textarea{
+                width: 100%;
+                padding: 1rem;
+                border: none;
+                border: 1px solid #e5e3df;
+            }
+
+            &__name input::placeholder,
+            &__email input::placeholder,
+            &__message textarea::placeholder {
+               text-transform: uppercase;
+               color: rgba(0,0,0,0.88);
+               font-weight: bold;
+            }
+
+            
+        }
+    }
+}
