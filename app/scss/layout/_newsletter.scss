@@ -1,0 +1,31 @@
+.newsletter {
+    .section-header{
+        margin-top: 4rem;
+    }
+
+    .newsletter-form {
+        display: block;
+        width: 18rem;
+        margin: 0 auto;
+
+        &__email {
+            display: inline-block;
+            margin: 0 auto;
+            background: #000;
+            color: #fff;
+            border: none;
+            padding: 0.7rem;
+           
+            &::placeholder{
+                color: #fff;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-family: inherit;
+            }
+        }
+
+        &__btn{
+            @include button-primary;
+        }
+    }
+}
