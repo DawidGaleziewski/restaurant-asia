@@ -11,7 +11,7 @@ Below is the list of things I would like to
 
 //1 ~~ CRITICAL ISSUES START//
 
-    #C001 - HEROKU WONT DISPLAY BACKGROUND IMAGED []
+    #C001 - HEROKU WONT DISPLAY BACKGROUND IMAGED [X]
         Console shows that this resource does not exist
         Application tab shows that url will differ.
         http://127.0.0.1:5500/img-min/footer/wok.jpeg
@@ -26,6 +26,7 @@ Below is the list of things I would like to
         Applying this to other images
 
         Important! url has to start with / which is root.
+        TESTED AND FIXED
 
     #C002 - PICTURES LOADING TIMES - LOADING ON MOBILES []
     #C003 - RWD FOR MORE SCREEN SIZES []
