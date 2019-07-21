@@ -1,9 +1,18 @@
 .footer {
     max-width: 80rem;
-    margin: $margin-medium * 2 auto;
     background-image: url('../../img-min/footer/wok.jpeg');
+    background-size: cover;
+    background-position: center;
+
     min-height: 37.5rem;
-    padding: 8rem 3rem;
+    margin-top: 4rem;
+    padding: 8rem 0;
+
+    	
+    @include screen-type(desktop){
+        margin: $margin-medium * 2 auto;
+        padding: 8rem 3rem;
+    }
 
     .address {
         color: #fff;
@@ -15,21 +24,23 @@
             display: inline-block;
             position: relative;
 
-            &::after {
-                content: ':';
-                position: absolute;
-                top: -8px;
-                right: -2rem;
-                color: #fff;
-                font-size: 1.5rem;
-                text-shadow: 0 0 3px rgba(0,0,0,.88);
+            @include screen-type(desktop){
+                &::after {
+                    content: ':';
+                    position: absolute;
+                    top: -8px;
+                    right: -2rem;
+                    color: #fff;
+                    font-size: 1.5rem;
+                    text-shadow: 0 0 3px rgba(0,0,0,.88);
+                }
             }
         }
     
         .logo {
             display: inline-block;
             font-family: 'gang_of_threeregular';
-            margin: 0 6rem;
+            
             font-size: 1.2rem;
             text-align: center;
             vertical-align: middle;
@@ -37,21 +48,28 @@
             .icon {
                 font-size: 3rem;
             }
+
+            @include screen-type(desktop){
+                margin: 0 6rem;
+            }
         }
     
         .street {
             display: inline-block; 
             position: relative;
 
-            &::after {
-                content: ':';
-                position: absolute;
-                top: -8px;
-                left: -2rem;
-                color: #fff;
-                font-size: 1.5rem;
-                text-shadow: 0 0 3px rgba(0,0,0,.88);
+            @include screen-type(desktop) {
+                &::after {
+                    content: ':';
+                    position: absolute;
+                    top: -8px;
+                    left: -2rem;
+                    color: #fff;
+                    font-size: 1.5rem;
+                    text-shadow: 0 0 3px rgba(0,0,0,.88);
+                }
             }
+
         }
     }
 
