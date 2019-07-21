@@ -12,6 +12,15 @@ Below is the list of things I would like to
 //1 ~~ CRITICAL ISSUES START//
 
     #C001 - HEROKU WONT DISPLAY BACKGROUND IMAGED []
+        Console shows that this resource does not exist
+        Application tab shows that url will differ.
+        http://127.0.0.1:5500/img-min/footer/wok.jpeg
+        http://127.0.0.1:5500/app/img-min/orders/sushi-3.jpeg
+
+        seems those do not start from root
+        Changed the scss to refer to path:
+        background-image: url('/app/img-min/video-presentation/wok.jpeg');
+
     #C002 - PICTURES LOADING TIMES - LOADING ON MOBILES []
     #C003 - RWD FOR MORE SCREEN SIZES []
     #C004 - GIT DOCUMENTATION []
