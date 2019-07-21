@@ -29,6 +29,8 @@ Below is the list of things I would like to
         TESTED AND FIXED
 
     #C002 - PICTURES LOADING TIMES - LOADING ON MOBILES []
+        Based on information from tutorial:
+        https://www.youtube.com/watch?v=oi5SCqS-7xw
     #C003 - RWD FOR MORE SCREEN SIZES []
     #C004 - GIT DOCUMENTATION []
     #C005 - MENU SCROLL AND IDS FOR SECTIONS []

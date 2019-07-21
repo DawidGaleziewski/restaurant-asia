@@ -11,7 +11,7 @@ class FetchJson{
                 
                 const jsonObj = data.orderItems;
                 const menuList = document.querySelector('.dishes-menu .menu-items');
-                const imgPath = './img-min/orders/'
+                const imgPath = './img-min/mobile/orders/'
                 let finalDOMStructure = "";
 
                 jsonObj.forEach(orderItem => {

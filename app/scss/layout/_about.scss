@@ -45,17 +45,23 @@
                 position: relative;
                 min-height: 18rem;
                 padding: 1.5rem;
-                background-image: url('/app/img-min/about/lampions.jpeg');
+                
                 background-position: center;
                 background-size: cover;
+
+
 
                 @include screen-type(desktop) {
                     width: 100%;
                 }
 
+                &--main {
+                    background-image: url('/app/img-min/mobile/about/chief.jpeg');
+                }
+
                 &--secondary {
                     width: 18.75rem;
-                    
+                    background-image: url('/app/img-min/mobile/about/ramen.jpeg');
                     margin: 0 auto;
                     margin-bottom: 1.5rem;
 
