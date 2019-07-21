@@ -21,6 +21,12 @@ Below is the list of things I would like to
         Changed the scss to refer to path:
         background-image: url('/app/img-min/video-presentation/wok.jpeg');
 
+        Seems above fixed the issue on heroku 
+
+        Applying this to other images
+
+        Important! url has to start with / which is root.
+
     #C002 - PICTURES LOADING TIMES - LOADING ON MOBILES []
     #C003 - RWD FOR MORE SCREEN SIZES []
     #C004 - GIT DOCUMENTATION []
