@@ -36,6 +36,14 @@ Below is the list of things I would like to
         http://www.imageoptimizer.net/Pages/Home.aspx
         
     #C003 - RWD FOR MORE SCREEN SIZES []
+        iPhone 5/se
+            portrait[x]
+            landscape[x]
+                -removed ugly border for carousel
+
+        galaxy s5[]
+            testimonial issue with author going bellow 
+
     #C004 - GIT DOCUMENTATION []
     #C005 - MENU SCROLL AND IDS FOR SECTIONS []
 
