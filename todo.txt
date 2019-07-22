@@ -28,9 +28,13 @@ Below is the list of things I would like to
         Important! url has to start with / which is root.
         TESTED AND FIXED
 
-    #C002 - PICTURES LOADING TIMES - LOADING ON MOBILES []
+    #C002 - PICTURES LOADING TIMES - LOADING ON MOBILES [X]
         Based on information from tutorial:
         https://www.youtube.com/watch?v=oi5SCqS-7xw
+
+        Using this site to make pictures smaller:
+        http://www.imageoptimizer.net/Pages/Home.aspx
+        
     #C003 - RWD FOR MORE SCREEN SIZES []
     #C004 - GIT DOCUMENTATION []
     #C005 - MENU SCROLL AND IDS FOR SECTIONS []
