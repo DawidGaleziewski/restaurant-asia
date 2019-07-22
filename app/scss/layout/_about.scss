@@ -15,12 +15,14 @@
         
         .carousel {
             width: 100%;
-            height: 37.5rem;
+            min-height: 37.5rem;
             margin: 0;
 
             @include screen-type(desktop) {
                 max-width: 49%;
             }
+
+
         }
     
         .articles-about {

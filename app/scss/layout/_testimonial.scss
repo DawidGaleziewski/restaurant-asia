@@ -22,13 +22,22 @@
             width: 40rem;
         }
         
+        &__button {
+            top: 50%;
+            transform: translateY(-50%);
 
-        &__button{
-            top: 29%;
+            @include screen-type(desktop){
+            top: 25%;
+            // transform: translateY(0%)
+         }
+
         }
+
+
 
         &__track-container {
             height: auto;
+            padding-bottom: 2rem;
         }
         
         &__track {
@@ -41,6 +50,7 @@
 
                 .single-testimonial{
                     width: 18rem;
+                    
                     @include screen-type(desktop){
                         width: 40rem;
                     }
@@ -50,16 +60,19 @@
                         @include screen-type(desktop){
                             padding: 3rem 6rem;
                         }
-                        min-height: 15rem;
+
                         font-size: 1.2rem;
                         background-color: #ffffff;
                         
                     }
             
                     &__author{
+                        // z-index: 3;
+                        // margin-top: 1rem;
+                        padding: 0.7rem;
                         font-size: 1rem;
                         display: block;
-                        color: white;
+                        color: #fff;
                         text-align: center;
                         width: 100%;
                         font-weight: bold;
