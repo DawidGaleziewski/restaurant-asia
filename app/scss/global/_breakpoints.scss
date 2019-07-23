@@ -16,7 +16,7 @@ BREAKPOINTS
    }
 
     @else if $point == tablet-portrait {
-      @media screen and (min-width: 600px) { @content ; }
+      @media screen and (min-width: 700px) and (min-height: 1020px){ @content ; }
    }
      @else if $point == tablet-landscape {
       @media screen and (min-width: 900px) { @content ; }

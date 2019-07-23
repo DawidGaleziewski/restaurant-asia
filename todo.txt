@@ -41,8 +41,13 @@ Below is the list of things I would like to
             landscape[x]
                 -removed ugly border for carousel
 
-        galaxy s5[]
+        galaxy s5[x]
             testimonial issue with author going bellow 
+        
+        ipad
+            portrait[]
+             Menu issue[]
+             Header boxes flexbox looking bad - distances between column[]
 
     #C004 - GIT DOCUMENTATION []
     #C005 - MENU SCROLL AND IDS FOR SECTIONS []
