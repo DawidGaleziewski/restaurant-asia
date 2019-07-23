@@ -29,9 +29,16 @@ body {
 		padding: 0;
 	}
 
+	@include screen-type(tablet-portrait){
+		padding: 1rem;
+	}
+
 	@include screen-type(desktop){
 		margin-top: $margin-medium * 4;
 	}
+
+
+	
 
 	.menu {
 		display: flex;
@@ -72,14 +79,10 @@ body {
 			width: 100%;
 			border-left: none;
 			border-bottom: none;
-		}
-	
-		@include screen-type(desktop){
 			max-width: $section-width-desktop;
 			margin:  0 auto;
 			border-top: 3px dotted #e8e8e8;
 		}
-		
 	
 		&__item{
 			text-transform: uppercase;
@@ -92,6 +95,8 @@ body {
 			color:$color-accent;
 			transition: transform 0.3s ease-in;
 			margin-bottom: $margin-medium;
+
+
 	
 			// Hide links on desktop devices
 			@include screen-type(desktop){
@@ -141,6 +146,11 @@ body {
 					padding: $padding-small;
 					font-size: $size-description * 0.7;
 				}
+
+				// Better readability on tablet
+				@include screen-type(tablet-portrait){
+					font-size: 2rem;
+				}
 			}
 			
 		}
@@ -159,6 +169,12 @@ body {
 			position: relative;
 			height: 3px;
 			width: 1.5rem;
+			// Better readability on tablet
+			@include screen-type(tablet-portrait){
+				width: 2.5rem;
+				height: 3px;
+			}
+
 			transition: transform 1s;
 			background-color: $color-accent;
 			margin-top: 5px;
