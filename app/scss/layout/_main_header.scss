@@ -24,6 +24,10 @@
             display: flex;
             flex-wrap: wrap;
 
+            @include screen-type(tablet-portrait){
+                justify-content: center;
+            }
+
             @include screen-type(desktop){
                 flex-direction: row;
                 justify-content: space-between;
@@ -32,6 +36,11 @@
             &__item{
                 margin: 0 auto;
                 margin-bottom: 2rem;
+
+              
+                @include screen-type(tablet-portrait){
+                    margin: 1rem;
+                }
 
                 @include screen-type(desktop){
                     margin: 0;
