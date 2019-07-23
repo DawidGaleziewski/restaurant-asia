@@ -46,8 +46,15 @@ Below is the list of things I would like to
         
         ipad
             portrait[]
-             Menu issue[]
-             Header boxes flexbox looking bad - distances between column[]
+             Menu issue[x]
+             Header boxes flexbox looking bad - distances between column[x]
+
+             About section - one column only looking bad []
+
+             Testimonial section - to small description []
+
+             Contact form looking bad []
+
 
     #C004 - GIT DOCUMENTATION []
     #C005 - MENU SCROLL AND IDS FOR SECTIONS []
