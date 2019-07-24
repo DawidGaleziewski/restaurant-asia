@@ -28,6 +28,12 @@
                 justify-content: center;
             }
 
+            @include screen-type(tablet-landscape){
+                flex-direction: row;
+                justify-content: center;
+                
+            }
+
             @include screen-type(desktop){
                 flex-direction: row;
                 justify-content: space-between;
@@ -37,9 +43,19 @@
                 margin: 0 auto;
                 margin-bottom: 2rem;
 
-              
+                position: relative;
+                height: 18.75rem;
+                width: 18.75rem;
+
                 @include screen-type(tablet-portrait){
                     margin: 1rem;
+                }
+
+                @include screen-type(tablet-landscape){
+                    margin: 2rem;
+                    height: 25rem;
+                    width: 25rem;
+                    
                 }
 
                 @include screen-type(desktop){
@@ -48,9 +64,7 @@
                     justify-content: space-between;
                 }
 
-                position: relative;
-                height: 18.75rem;
-                width: 18.75rem;
+
                 .link{
                     
                     &__title {

@@ -33,6 +33,11 @@ body {
 		padding: 1rem;
 	}
 
+
+	// @include screen-type(tablet-landscape){
+	// 	margin-top: $margin-medium * 4;		
+	// }
+
 	@include screen-type(desktop){
 		margin-top: $margin-medium * 4;
 	}
@@ -64,9 +69,7 @@ body {
 			flex-wrap: wrap;
 		}
 	
-	
-	
-		@include screen-type(desktop){
+		@include screen-type(tablet-landscape){
 			padding: $padding-medium;
 			flex-wrap: nowrap;
 			justify-content: center;
@@ -81,7 +84,11 @@ body {
 			border-bottom: none;
 			max-width: $section-width-desktop;
 			margin:  0 auto;
-			border-top: 3px dotted #e8e8e8;
+			
+		}
+	
+		@include screen-type(desktop){
+			border-top: 3px dotted #e8e8e8;	
 		}
 	
 		&__item{
@@ -98,13 +105,21 @@ body {
 
 
 	
-			// Hide links on desktop devices
-			@include screen-type(desktop){
+			// Hide links on tablet landscape and desktop devices
+			@include screen-type(tablet-landscape){
 				margin-bottom: 0;
 				margin-right: $margin-small;
 				text-align: center;
 				opacity: 1;
 			}
+
+			
+			// @include screen-type(desktop){
+			// 	margin-bottom: 0;
+			// 	margin-right: $margin-small;
+			// 	text-align: center;
+			// 	opacity: 1;
+			// }
 	
 			// @include screen-type(desktop){
 				
@@ -174,6 +189,7 @@ body {
 				width: 2.5rem;
 				height: 3px;
 			}
+			
 
 			transition: transform 1s;
 			background-color: $color-accent;
@@ -200,10 +216,14 @@ body {
 			}
 		}
 	
-		// Hide hamburger on desktop devices
-		@include screen-type(desktop){
+		// Hide hamburger on tablet landscape and desktop devices
+		@include screen-type(tablet-landscape){
 			display: none;
 		}
+
+		// @include screen-type(desktop){
+		// 	display: none;
+		// }
 
 	}
 

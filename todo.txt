@@ -45,7 +45,7 @@ Below is the list of things I would like to
             testimonial issue with author going bellow 
         
         ipad
-            portrait[]
+            portrait[x]
              Menu issue[x]
              Header boxes flexbox looking bad - distances between column[x]
 
@@ -53,7 +53,15 @@ Below is the list of things I would like to
 
              Testimonial section - to small description [x]
 
-             Contact form looking bad []
+             Contact form looking bad [x]
+
+            landscape[]
+                navbar improvment - same as on  desktop
+                secondary menu - change size to fit in one column
+                about blog - same as on portrait
+                testimonial - same as on portrait
+                contact - same as on portrait
+
 
 
     #C004 - GIT DOCUMENTATION []
