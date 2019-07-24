@@ -55,12 +55,22 @@ Below is the list of things I would like to
 
              Contact form looking bad [x]
 
-            landscape[]
-                navbar improvment - same as on  desktop
-                secondary menu - change size to fit in one column
-                about blog - same as on portrait
-                testimonial - same as on portrait
-                contact - same as on portrait
+            landscape[x]
+                navbar improvment - same as on  desktop [x]
+                secondary menu - change size to fit in two column [x]
+                about blog - same as on portrait [x]
+                testimonial - same as on portrait [x]
+                contact - same as on portrait [x]
+
+            desktop
+                halfscreen
+                    navbar padding[x]
+                    about blog posts [x]
+                    testimonial [x]
+                    contact form [x]
+
+                fullscreen
+                    nav secondary [x]
 
 
 

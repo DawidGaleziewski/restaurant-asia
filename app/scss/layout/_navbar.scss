@@ -26,7 +26,6 @@ body {
 
 	@include screen-type(phone-medium){
 		flex-wrap: nowrap;
-		padding: 0;
 	}
 
 	@include screen-type(tablet-portrait){

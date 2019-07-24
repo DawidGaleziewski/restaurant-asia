@@ -37,6 +37,10 @@
                 flex-direction: row;
             }
 
+            @include screen-type(tablet-landscape) {
+                flex-direction: row;
+            }
+
             @include screen-type(desktop) {
                 max-width: 49%;
                 flex-direction: row;

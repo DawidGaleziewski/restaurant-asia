@@ -59,6 +59,8 @@
                 }
 
                 @include screen-type(desktop){
+                    height: 18.75rem;
+                    width: 18.75rem;
                     margin: 0;
                     flex-direction: row;
                     justify-content: space-between;

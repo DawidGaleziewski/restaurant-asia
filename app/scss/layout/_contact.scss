@@ -51,13 +51,18 @@
                 padding: 6rem 2rem;
             }
 
-            @include screen-type(desktop) {
-                margin-top: 0rem;
+            @include screen-type(tablet-landscape){
+                margin-top: 2rem;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
                 align-content: flex-start;
                 flex-direction: row;
+                padding: 6rem 2rem;
+            }
+
+            @include screen-type(desktop) {
+                margin-top: 0rem;
                 width: 48%;
                 padding: 6rem 4rem;
             }
@@ -67,6 +72,10 @@
                 margin-top: 2rem;
                 width: 100%;
                 @include screen-type(tablet-portrait){
+                    width: 47%;
+                }
+
+                @include screen-type(tablet-landscape){
                     width: 47%;
                 }
 

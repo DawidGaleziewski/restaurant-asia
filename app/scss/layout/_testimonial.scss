@@ -23,6 +23,10 @@
             width: 28rem;
         }
 
+        @include screen-type(tablet-landscape){
+            width: 35rem;
+        }
+
         @include screen-type(desktop){
             width: 40rem;
         }
@@ -32,6 +36,10 @@
             transform: translateY(-50%);
 
             @include screen-type(tablet-portrait){
+                top: 25%;
+            }
+
+            @include screen-type(tablet-landscape){
                 top: 25%;
             }
 
@@ -63,6 +71,11 @@
                     @include screen-type(tablet-portrait){
                         width: 28rem;
                     }
+
+                    @include screen-type(tablet-landscape){
+                        width: 35rem;
+                    }
+
 
                     @include screen-type(desktop){
                         width: 40rem;
