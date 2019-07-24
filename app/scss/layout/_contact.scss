@@ -42,7 +42,7 @@
             flex-direction: column;
 
             @include screen-type(tablet-portrait){
-                margin-top: 0rem;
+                margin-top: 2rem;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;

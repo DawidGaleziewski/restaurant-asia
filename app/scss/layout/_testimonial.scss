@@ -18,6 +18,11 @@
    .carousel {
         border: none;
         width: 18rem;
+
+        @include screen-type(tablet-portrait){
+            width: 28rem;
+        }
+
         @include screen-type(desktop){
             width: 40rem;
         }
@@ -25,6 +30,10 @@
         &__button {
             top: 50%;
             transform: translateY(-50%);
+
+            @include screen-type(tablet-portrait){
+                top: 25%;
+            }
 
             @include screen-type(desktop){
             top: 25%;
@@ -51,6 +60,10 @@
                 .single-testimonial{
                     width: 18rem;
                     
+                    @include screen-type(tablet-portrait){
+                        width: 28rem;
+                    }
+
                     @include screen-type(desktop){
                         width: 40rem;
                     }
