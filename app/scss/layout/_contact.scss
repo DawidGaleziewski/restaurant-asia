@@ -12,6 +12,7 @@
         min-height: 37.5rem;
         justify-content: space-between;
 
+
         @include screen-type(desktop) {
             flex-direction: row;
         }
@@ -40,6 +41,16 @@
 
             flex-direction: column;
 
+            @include screen-type(tablet-portrait){
+                margin-top: 0rem;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-content: flex-start;
+                flex-direction: row;
+                padding: 6rem 2rem;
+            }
+
             @include screen-type(desktop) {
                 margin-top: 0rem;
                 display: flex;
@@ -55,6 +66,10 @@
             &__email {
                 margin-top: 2rem;
                 width: 100%;
+                @include screen-type(tablet-portrait){
+                    width: 47%;
+                }
+
                 @include screen-type(desktop){
                     width: 47%;
                 }

@@ -49,9 +49,9 @@ Below is the list of things I would like to
              Menu issue[x]
              Header boxes flexbox looking bad - distances between column[x]
 
-             About section - one column only looking bad []
+             About section - one column only looking bad [x]
 
-             Testimonial section - to small description []
+             Testimonial section - to small description [x]
 
              Contact form looking bad []
 
