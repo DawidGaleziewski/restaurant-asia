@@ -35,7 +35,7 @@ Below is the list of things I would like to
         Using this site to make pictures smaller:
         http://www.imageoptimizer.net/Pages/Home.aspx
         
-    #C003 - RWD FOR MORE SCREEN SIZES []
+    #C003 - RWD FOR MORE SCREEN SIZES [x]
         iPhone 5/se
             portrait[x]
             landscape[x]
@@ -75,7 +75,7 @@ Below is the list of things I would like to
 
 
     #C004 - GIT DOCUMENTATION []
-    #C005 - MENU SCROLL AND IDS FOR SECTIONS [x]
+    #C005 - MENU SCROLL AND IDS FOR SECTIONS [X]
         +nav-top
         main-header
         dishes-popular
