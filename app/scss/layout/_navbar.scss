@@ -62,6 +62,10 @@ body {
 		align-items: flex-start;
 		transition: transform 1s ease-in;
 		background-color: $color-main;
+
+		@include screen-type(phone-landscape){
+			flex-wrap: wrap;
+		}
 	
 		@include screen-type(phone-medium){
 			height: 90vh;

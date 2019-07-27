@@ -11,7 +11,71 @@ Below is the list of things I would like to
 
 //1 ~~ CRITICAL ISSUES START//
 
-    #C001 - HEROKU WONT DISPLAY BACKGROUND IMAGED [X]
+
+    #C004 - GIT DOCUMENTATION []
+
+
+    #C006 - when resizing the hamburger wont work []
+        issue is a bit deeper - main problem is due the fact that the script will check if the device is mobile.
+        and the burger occurs also on desktop when small enough
+
+        ides to solve
+        1. Use display property of burger -
+            this seems to bad considering the fact how js will handle css:
+            https://www.sitepoint.com/community/t/getattribute-wont-get-a-display-attribute/5571
+
+        2. Check width of the site in function that is invoked with event listener when resizing?
+
+    #C007 - mobile landscape view menu - not all items are fitting
+//1 ~~ CRITICAL ISSUES END//
+
+
+
+
+
+//2 ~~ IMPORTANT START//
+
+    #I001 - POPULAR DISHES - LOAD ITEMS FROM JSON []
+    #I002 - SCROLLING BAR ON THE BOTTOM []
+    #I003 - RESIZE THE SECTION WHEN FILTERING ITEMS []
+    #I004 - REFACTOR CODE []
+    #I005 - WORK ON CSS COMMENTS []
+    #I006 - DIFFRENT COLORS FOR HOVERED ITEMS []
+    #I007 - JAVASCRIP OOP IMPROVMENT []
+
+//2 ~~ IMPORTANT END//
+
+
+
+
+
+
+//3 ~~ SUGGESTED BY COMMUNITY START//
+
+    #S001 - ASK COMMUNITY ON SUGGESTIONS []
+
+//3 ~~ SUGGESTED BY COMMUNITY END//
+
+
+
+
+
+//4 ~~ NICE TO HAVE START//
+
+    #N001 - BACKED FOR SITE FOR MORE BELIVABLE EXPIRIANCE []
+    #N002 - AUTO SWIPE CAROUSELS []
+    #N003 - GOOGLE MAPS FOR CONTACT SECTION []
+
+//4 ~~ NICE TO HAVE COMMUNITY END//
+
+
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+============DONE============
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   #C001 - HEROKU WONT DISPLAY BACKGROUND IMAGED [X]
         Console shows that this resource does not exist
         Application tab shows that url will differ.
         http://127.0.0.1:5500/img-min/footer/wok.jpeg
@@ -72,9 +136,6 @@ Below is the list of things I would like to
                 fullscreen
                     nav secondary [x]
 
-
-
-    #C004 - GIT DOCUMENTATION []
     #C005 - MENU SCROLL AND IDS FOR SECTIONS [X]
         +nav-top
         main-header
@@ -86,56 +147,3 @@ Below is the list of things I would like to
         +contact
         newsletter
         footer
-
-    #C006 - when resizing the hamburger wont work []
-        issue is a bit deeper - main problem is due the fact that the script will check if the device is mobile.
-        and the burger occurs also on desktop when small enough
-
-        ides to solve
-        1. Use display property of burger -
-            this seems to bad considering the fact how js will handle css:
-            https://www.sitepoint.com/community/t/getattribute-wont-get-a-display-attribute/5571
-
-        2. Check width of the site in function that is invoked with event listener when resizing?
-
-    #C007 - mobile landscape view menu - not all items are fitting
-//1 ~~ CRITICAL ISSUES END//
-
-
-
-
-
-//2 ~~ IMPORTANT START//
-
-    #I001 - POPULAR DISHES - LOAD ITEMS FROM JSON []
-    #I002 - SCROLLING BAR ON THE BOTTOM []
-    #I003 - RESIZE THE SECTION WHEN FILTERING ITEMS []
-    #I004 - REFACTOR CODE []
-    #I005 - WORK ON CSS COMMENTS []
-    #I006 - DIFFRENT COLORS FOR HOVERED ITEMS []
-    #I007 - JAVASCRIP OOP IMPROVMENT []
-
-//2 ~~ IMPORTANT END//
-
-
-
-
-
-
-//3 ~~ SUGGESTED BY COMMUNITY START//
-
-    #S001 - ASK COMMUNITY ON SUGGESTIONS []
-
-//3 ~~ SUGGESTED BY COMMUNITY END//
-
-
-
-
-
-//4 ~~ NICE TO HAVE START//
-
-    #N001 - BACKED FOR SITE FOR MORE BELIVABLE EXPIRIANCE []
-    #N002 - AUTO SWIPE CAROUSELS []
-    #N003 - GOOGLE MAPS FOR CONTACT SECTION []
-
-//4 ~~ NICE TO HAVE COMMUNITY END//

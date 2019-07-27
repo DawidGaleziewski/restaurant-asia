@@ -7,6 +7,10 @@ BREAKPOINTS
       @media screen and (max-width: 400px){ @content ; }
    }
 
+   @else if $point == phone-landscape {
+      @media screen and (max-height: 550px){ @content ; }
+   }
+
    @else if $point == phone-medium {
       @media screen and (min-width: 599px){ @content ; }
    }
