@@ -14,19 +14,6 @@ Below is the list of things I would like to
 
     #C004 - GIT DOCUMENTATION []
 
-
-    #C006 - when resizing the hamburger wont work []
-        issue is a bit deeper - main problem is due the fact that the script will check if the device is mobile.
-        and the burger occurs also on desktop when small enough
-
-        ides to solve
-        1. Use display property of burger -
-            this seems to bad considering the fact how js will handle css:
-            https://www.sitepoint.com/community/t/getattribute-wont-get-a-display-attribute/5571
-
-        2. Check width of the site in function that is invoked with event listener when resizing?
-
-    #C007 - mobile landscape view menu - not all items are fitting [x]
 //1 ~~ CRITICAL ISSUES END//
 
 
@@ -147,3 +134,19 @@ Below is the list of things I would like to
         +contact
         newsletter
         footer
+
+        #C006 - when resizing the hamburger wont work [x]
+        issue is a bit deeper - main problem is due the fact that the script will check if the device is mobile.
+        and the burger occurs also on desktop when small enough
+
+        ides to solve
+        1. Use display property of burger -
+            this seems to bad considering the fact how js will handle css:
+            https://www.sitepoint.com/community/t/getattribute-wont-get-a-display-attribute/5571
+
+        2. Check width of the site in function that is invoked with event listener when resizing?
+
+        solved by addding avent viewer not to individual items but whole menu (due to best practises)
+        Also the function that gets removed should be available golobally/ from the function that tries to remove it from event listiner
+        
+    #C007 - mobile landscape view menu - not all items are fitting [x]
