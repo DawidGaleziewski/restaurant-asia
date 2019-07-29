@@ -5,14 +5,12 @@
 ##############
 
 =====================
-Below is the list of things I would like to 
+Below is the list of things I would like to improve or add
 =====================
 
 
 //1 ~~ CRITICAL ISSUES START//
 
-
-    #C004 - GIT DOCUMENTATION []
 
 //1 ~~ CRITICAL ISSUES END//
 
@@ -22,13 +20,14 @@ Below is the list of things I would like to
 
 //2 ~~ IMPORTANT START//
 
-    #I001 - POPULAR DISHES - LOAD ITEMS FROM JSON []
+    
     #I002 - SCROLLING BAR ON THE BOTTOM []
     #I003 - RESIZE THE SECTION WHEN FILTERING ITEMS []
     #I004 - REFACTOR CODE []
     #I005 - WORK ON CSS COMMENTS []
     #I006 - DIFFRENT COLORS FOR HOVERED ITEMS []
     #I007 - JAVASCRIP OOP IMPROVMENT []
+    #I001 - POPULAR DISHES - LOAD ITEMS FROM JSON []
 
 //2 ~~ IMPORTANT END//
 
@@ -62,6 +61,7 @@ Below is the list of things I would like to
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 ============DONE============
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   #C004 - GIT DOCUMENTATION [X]
    #C001 - HEROKU WONT DISPLAY BACKGROUND IMAGED [X]
         Console shows that this resource does not exist
         Application tab shows that url will differ.
