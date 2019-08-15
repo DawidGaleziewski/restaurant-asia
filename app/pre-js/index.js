@@ -31,8 +31,5 @@
     carousel.start('carousel-testimonial', 1);
 
 
-    alert('test')
-    console.log('test')
-
 
     
