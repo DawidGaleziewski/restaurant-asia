@@ -1,4 +1,5 @@
 // Main javascript file
+
     //1. import modules
     import Menu from './modules/menu.js';
     import Carousel from './modules/carousel';
@@ -28,6 +29,8 @@
     fetchJson.start();
     filterOrders.start();
     carousel.start('carousel-testimonial', 1);
+
+
 
 
 
